@@ -1,5 +1,6 @@
 // gulp
 var gulp = require('gulp');
+var stylus = require('gulp-stylus');
 var connect = require('gulp-connect');
 
 // other
@@ -10,9 +11,9 @@ var source = require('vinyl-source-stream');
 var config = {
     port: 4000,
     paths: {
-        js: './src/**/*.js',
-        styl: './src/**/*.styl',
-        dist: './src/compiled',
+        js: './src/js/**/*.js',
+        styl: './src/styl/**/*.styl',
+        compiled: './src/compiled',
         main: './src/main.js'
     }
 };
@@ -33,12 +34,21 @@ gulp.task('js', function () {
         .transform(babelify)
         .bundle()
         .pipe(source('bundle.js'))
-        .pipe(gulp.dest(config.paths.dist));
+        .pipe(gulp.dest(config.paths.compiled));
+});
+
+gulp.task('stylus', function () {
+    return gulp.src(config.paths.styl)
+        .pipe(stylus({
+            compress: true
+        }))
+        .pipe(gulp.dest(config.paths.compiled))
 });
 
 gulp.task('watch', function () {
     gulp.watch(config.paths.js, ['js']);
+    gulp.watch(config.paths.styl, ['stylus']);
 });
 
 // tasks
-gulp.task('default', ['connect', 'js']);
+gulp.task('default', ['connect', 'js', 'stylus', 'watch']);
