@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var stylus = require('gulp-stylus');
 var connect = require('gulp-connect');
+var livereload = require('gulp-livereload');
 
 // other
 var browserify = require('browserify');
@@ -22,7 +23,7 @@ gulp.task('connect', function () {
     connect.server({
         root: ['./src'],
         port: config.port,
-        livereload: false
+        livereload: true
     });
 });
 
@@ -34,7 +35,8 @@ gulp.task('js', function () {
         .transform(babelify)
         .bundle()
         .pipe(source('bundle.js'))
-        .pipe(gulp.dest(config.paths.compiled));
+        .pipe(gulp.dest(config.paths.compiled))
+        .pipe(livereload());
 });
 
 gulp.task('stylus', function () {
@@ -43,9 +45,11 @@ gulp.task('stylus', function () {
             compress: true
         }))
         .pipe(gulp.dest(config.paths.compiled))
+        .pipe(livereload());
 });
 
 gulp.task('watch', function () {
+    livereload.listen();
     gulp.watch(config.paths.js, ['js']);
     gulp.watch(config.paths.styl, ['stylus']);
 });
