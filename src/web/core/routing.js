@@ -1,5 +1,5 @@
-import React from 'react'
-import {Route} from 'react-router'
+import React from 'react';
+import {Route} from 'react-router';
 import TodoApp from '../components/Menu';
 // import ProductsContainer from '../components/ProductsContainer';
 // import ProductDetail from '../components/ProductDetail';
@@ -15,6 +15,6 @@ import NotFound from '../components/NotFound';
 export default (
 	<Route component={TodoApp}>
 		<Route path="*"
-			   components={{main: NotFound, cart: null}}/>
+			   components={{main: NotFound}}/>
 	</Route>
 );
