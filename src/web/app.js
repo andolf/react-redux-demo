@@ -1,23 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router'
-import './styl/main.styl';
+import {render} from 'react-dom';
+import {Router, browserHistory} from 'react-router'
+import {Provider} from 'react-redux';
+import configureStore from '../core/redux/configureStore';
+import './styl/main.styl'; // css entry point
+import routes from './core/routing';
 
-import App from './core/App';
-import About from './core/About';
+let state;
+if (window.$REDUX_STATE) {
+	state = window.$REDUX_STATE;
+}
 
-const Users = '';
-const User = '';
-const NotFound = '';
+const store = configureStore(state);
 
-ReactDOM.render((
-    <Router history={browserHistory}>
-        <Route path='/' component={App}>
-            <Route path='about' component={About} />
-            <Route path='users' component={Users}>
-                <Route path='/user/:userId' component={User} />
-            </Route>
-            <Route path='*' component={NotFound} />
-        </Route>
-    </Router>
+render((
+	<Provider store={store}>
+		<Router history={browserHistory} routes={routes} />
+	</Provider>
 ), document.getElementById('root'));
