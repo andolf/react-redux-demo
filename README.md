@@ -8,4 +8,12 @@ Libraries used:
 - React router
 - Webpack (with hot reload)
 
+# How to run
+
+```
+$ npm install
+$ npm run web
+$ open localhost:3000
+```
+
 TBA
