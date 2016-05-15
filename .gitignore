@@ -30,4 +30,4 @@ node_modules
 .idea
 
 # Project
-src/compiled
+src/*/**/compiled
