@@ -1,25 +1,33 @@
-const webpack = require('webpack');
-const path = require('path');
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
-    entry: './src/web/app.js',
-    output: {
-        path: path.resolve(__dirname, './src/web/assets/compiled'),
-        publicPath: "/",
-        filename: 'app.min.js'
-    },
     devtool: 'eval',
+    entry: [
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server',
+        './src/web/app'
+    ],
+    output: {
+        path: path.join(__dirname, 'src/web/assets/compiled'),
+        filename: 'app.min.js',
+        publicPath: 'assets/compiled/'
+    },
     module: {
         loaders: [{
-            test: /\.jsx?$/,
-            exclude: /node_modules/,
-            loader: 'babel',
-            query: {
-                presets: ['es2015', 'react']
-            }
+            test: /\.js$/,
+            loaders: ['react-hot', 'babel-loader'],
+            include: path.join(__dirname, 'src')
+        }, {
+            test: /\.styl$/,
+            loaders: ['style', 'css', 'stylus']
         }]
     },
+    stylus: {
+        use: [require('nib')()]
+    },
     plugins: [
+        new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
