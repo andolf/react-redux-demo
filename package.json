@@ -4,9 +4,9 @@
   "description": "A simple react-redux-demo.",
   "main": "index.js",
   "scripts": {
-    "start": "node src/web/server",
     "watch": "webpack --watch",
-    "web": "npm run watch & webpack-dev-server --hot --inline --content-base ./src/web/ --port 3000",
+    "web": "npm run watch & webpack-dev-server --hot --inline --content-base ./src/web/",
+    "build": "echo nothing here yet...",
     "lint": "eslint src"
   },
   "repository": {

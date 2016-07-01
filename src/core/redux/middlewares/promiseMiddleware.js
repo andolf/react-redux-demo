@@ -13,6 +13,6 @@ export default function promiseMiddleware() {
 		return promise.then(
 			result => next({...rest, result, type: SUCCESS}),
 			error => next({...rest, result, type: ERROR})
-		)
-	}
+		);
+	};
 }

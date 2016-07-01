@@ -11,7 +11,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'src/web/assets/compiled'),
 		filename: 'app.min.js',
-		publicPath: 'assets/compiled/'
+		publicPath: '/'
 	},
 	module: {
 		loaders: [{
@@ -39,5 +39,8 @@ module.exports = {
 	],
 	resolve: {
 		root: ['node_modules', 'src']
+	},
+	devServer: {
+		historyApiFallback: true
 	}
 };

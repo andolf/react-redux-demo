@@ -8,7 +8,7 @@ class About extends React.Component {
 
 	render() {
 		return (
-			<P>About</P>
+			<p>About</p>
 		);
 	}
 }
