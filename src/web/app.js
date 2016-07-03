@@ -25,7 +25,7 @@ const App = ({children}) => (
 );
 
 const Home = () => (
-	<h1>Home</h1>
+	<h2>Home</h2>
 );
 
 ReactDOM.render(

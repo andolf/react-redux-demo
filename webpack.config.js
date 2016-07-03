@@ -9,13 +9,14 @@ module.exports = {
 		'./src/web/app'
 	],
 	output: {
-		path: path.join(__dirname, 'src/web/assets/compiled'),
-		filename: 'app.min.js',
+		path: path.join(__dirname, 'src/web/assets/compiled/'),
+		filename: 'bundle.js',
 		publicPath: '/'
 	},
 	module: {
 		loaders: [{
 			test: /\.js$/,
+			exclude: '/node_modules/',
 			loaders: ['react-hot', 'babel-loader'],
 			include: path.join(__dirname, 'src')
 		}, {
