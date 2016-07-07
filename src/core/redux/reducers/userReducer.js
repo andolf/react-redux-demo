@@ -1,4 +1,4 @@
-import {LOGIN, LOGOUT} from '../actionConstants';
+import {LOGIN, LOGOUT} from '../constants/actionTypes';
 
 const INITIAL_STATE = {};
 

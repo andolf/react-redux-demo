@@ -42,6 +42,10 @@ module.exports = {
 		root: ['node_modules', 'src']
 	},
 	devServer: {
+		proxy: [{
+			path: '/api/*',
+			target: 'http://localhost:4000'
+		}],
 		historyApiFallback: true
 	}
 };

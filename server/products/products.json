@@ -1,0 +1,42 @@
+[
+	{
+		"id": 0,
+		"category": "RPG",
+		"name": "Final Fantasy VI",
+		"platform": "SNES",
+		"cost": 300,
+		"releaseDate": 1994
+	},
+	{
+		"id": 1,
+		"category": "Platform",
+		"name": "Mega Man 2",
+		"platform": "NES",
+		"cost": 200,
+		"releaseDate": 1988
+	},
+	{
+		"id": 2,
+		"category": "Platform",
+		"name": "Super Mario Bros.",
+		"platform": "NES",
+		"cost": 100,
+		"releaseDate": 1985
+	},
+	{
+		"id": 3,
+		"category": "Arcade",
+		"name": "Paper Boy",
+		"platform": "NES",
+		"cost": 50,
+		"releaseDate": 1985
+	},
+	{
+		"id": 4,
+		"category": "Sports",
+		"name": "Ice Hockey",
+		"platform": "NES",
+		"cost": 50,
+		"releaseDate": 1988
+	}
+]

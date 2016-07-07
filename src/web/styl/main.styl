@@ -1,62 +1,9 @@
 // Core
-@import 'reset'
-@import 'variables'
-@import 'button'
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/base';
 
-body
-	background $background-body
-	color $text-color
-	font-family $font-family
-	font-size 87.5%
-
-#logo
-	color: $white;
-	padding: 10px;
-	background: $orange;
-
-#menu
-	display: flex;
-	align-items: stretch;
-	background: $background-menu;
-
-	.menu__mobile
-		background: #fff;
-
-
-	ul
-		display: none;
-
-	li
-		display inline-block
-
-	a
-		color $grey
-		padding: 15px 20px;
-		margin: 5px;
-		display inline-block
-		text-decoration none
-
-		&:hover
-			color: $text-color;
-			background: $white;
-
-h1,
-h2,
-h3,
-h4
-	font-family: $font-family;
-
-h1
-	font-size 2.5em
-	font-weight: 900;
-	text-transform: uppercase;
-
-h2
-	font-size 2.5em
-
-h3
-	font-size 2em
-
-h4
-	font-size 1.5em
-
+// Components
+@import 'components/menu';
+@import 'components/button';
+@import 'components/products';

@@ -2,18 +2,14 @@ import React from 'react';
 import {Link} from 'react-router';
 
 class Menu extends React.Component {
-	onClick() {
-		alert("test");
-	}
-
 	render() {
 		return (
 			<nav id='menu'>
-				<h1 id='logo'>MegaStore</h1>
+				<h1 id='logo'>GameStore</h1>
 				<button className='menu__mobile'>
 					<span />
 				</button>
-				<ul onClick={this.onClick}>
+				<ul>
 					<li><Link to='/'>Home</Link></li>
 					<li><Link to='/about'>About</Link></li>
 				</ul>
