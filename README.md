@@ -16,4 +16,4 @@ $ npm run web
 $ open localhost:3000
 ```
 
-TBA
+**NOTE:** This project is still a work in progress and used for experimental purposes.
