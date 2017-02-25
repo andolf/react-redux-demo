@@ -1,14 +1,15 @@
 import React from 'react';
 import Menu from './Menu';
+import style from '../style/components/Frame.css';
 
 const Frame = ({children}) => (
-	<div>
-		<Menu />
+    <div>
+        <Menu />
 
-		<div id='container'>
-			{children}
-		</div>
-	</div>
+        <div className={style.container}>
+            {children}
+        </div>
+    </div>
 );
 
 export default Frame;

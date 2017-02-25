@@ -1,0 +1,41 @@
+@import "../core/variables.css";
+
+.root {
+  display: flex;
+  align-items: stretch;
+  background: var(--background-menu);
+}
+
+.logo {
+  color: var(--white);
+  padding: var(--base-margin);
+  background: var(--orange);
+}
+
+.list > li {
+  display: inline-block;
+}
+
+.root a,
+.root a:active {
+  font-weight: bold;
+  color: var(--grey);
+  padding: 1.5em 2em;
+  margin: 0.5em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.root a:hover,
+.root a.active:hover {
+  color: var(--text-color);
+  background: var(--white);
+}
+
+.root a:focus,
+.root a.active:focus,
+.root a.selected,
+.root a.active.selected {
+  background: var(--blue);
+  color: var(--white);
+}

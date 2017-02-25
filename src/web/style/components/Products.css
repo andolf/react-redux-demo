@@ -1,0 +1,41 @@
+@import "../core/variables.css";
+
+.root {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.item {
+  border: 1px solid var(--border-color);
+  padding: var(--base-margin);
+  margin-bottom: var(--base-margin);
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 20em;
+}
+
+.title {
+  display: block;
+  font-family: var(--header-font-family);
+  text-transform: uppercase;
+  font-size: var(--h4-font-size);
+  font-weight: 900;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10%;
+  left: -35%;
+  width: 100%;
+  text-align: center;
+  transform: rotate(-45deg);
+  background: var(--blue);
+  color: var(--white);
+  padding: var(--base-margin);
+  text-transform: uppercase;
+  font-weight: bold;
+}

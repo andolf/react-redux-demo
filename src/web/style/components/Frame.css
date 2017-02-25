@@ -1,0 +1,5 @@
+@import "../core/variables.css";
+
+.container {
+  margin: var(--base-margin);
+}

@@ -15,16 +15,23 @@ module.exports = function(env) {
 			path: path.resolve(__dirname, 'dist'),
 			publicPath: '/static/'
 		},
-		devtool: 'inline-source-map',
+		devtool: '#eval',
 		module: {
 			rules: [{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				enforce: 'pre',
+				use: [
+					'eslint-loader'
+				],
+			}, {
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: [
 					'babel-loader'
 				],
 			}, {
-				test: /\.styl$/,
+				test: /\.css$/,
 				use: [
 					'style-loader',
 					'css-loader?modules',

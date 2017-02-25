@@ -29,5 +29,5 @@ node_modules
 # JetBrains
 .idea
 
-# Project
-src/*/**/compiled
+# Generated
+dist

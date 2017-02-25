@@ -1,0 +1,29 @@
+:root {
+  --background-body: #fff;
+  --background-menu: #2f2f32;
+  --text-color: #1f1f21;
+  --header-font-family: 'Assistant', sans-serif;
+  --base-font-family: 'Helvetica', sans-serif;
+
+  --base-margin: 1em;
+  --base-font-size: 1em;
+  --h1-font-size: calc(var(--base-font-size) * 2.5);
+  --h2-font-size: calc(var(--base-font-size) * 2.5);
+  --h3-font-size: calc(var(--base-font-size) * 2);
+  --h4-font-size: calc(var(--base-font-size) * 1.5);
+
+  --white: #f7f7fa;
+  --blue: #2fa8ff;
+  --blue-dark: color(var(--blue) blackness(10%));
+  --orange: #ff734c;
+  --orange-dark: color(var(--orange) blackness(10%));
+  --grey: #afafaf;
+  --grey-dark: color(var(--grey) blackness(10%));
+
+  --border-color: var(--grey);
+
+  --sm: 480px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1200px;
+}
