@@ -1,6 +1,10 @@
 @import "../core/variables.css";
 
 .button {
-  color: var(--blue-dark);
+  background-color: var(--blue-dark);
+  color: var(--white);
   font-family: "Arial", sans-serif;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
 }

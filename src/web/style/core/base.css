@@ -2,7 +2,7 @@
 @import "./variables.css";
 
 body {
-  background: var(--blue-dark);
+  background: var(--background-body);
   color: var(--text-color);
   font-family: var(--base-font-family);
   font-size: 87.5%;

@@ -7,6 +7,10 @@ class Products extends React.Component {
         this.state = {};
     }
 
+    shouldComponentUpdate() {
+        return false;
+    }
+
     componentWillMount() {
         this.props.actions.getProduct();
     }
