@@ -21,3 +21,4 @@ $ open localhost:3000
 
 ## TODO
 - Actual isomorphic stuff.
+- Testing using Jest.
