@@ -2,18 +2,22 @@
 
 An example boilerplate using various libraries to create an isomorphic application.
 
-Libraries used:
+## Libraries used:
 - React
 - Redux
-- React router
-- Webpack (with hot reload)
+- React Router
+- Webpack (with HMR)
+- PostCSS
 
-# How to run
+## How to run
 
 ```
 $ npm install
-$ npm run web
+$ npm start
 $ open localhost:3000
 ```
 
 **NOTE:** This project is still a work in progress and used for experimental purposes.
+
+## TODO
+- Actual isomorphic stuff.
