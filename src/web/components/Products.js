@@ -18,7 +18,7 @@ class Products extends React.Component {
         if (!products.length) return <div>No products.</div>;
 
         return (
-            <div className={style.root}>
+            <section className={style.root}>
                 {products.map((product, i) => (
                     <article key={'product-' + i} className={style.item}>
                         <img className={style.image} src='http://placehold.it/200x200' alt={product.name}/>
@@ -36,13 +36,13 @@ class Products extends React.Component {
                             <Link to={'/product/' + product.id}>
                                 Read more
                             </Link>
-                            <Button type='button'>
+                            <Button className={style.button}>
                                 Add to cart
                             </Button>
                         </footer>
                     </article>
                 ))}
-            </div>
+            </section>
         );
     }
 }

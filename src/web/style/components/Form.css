@@ -1,0 +1,46 @@
+@import "../core/variables.css";
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.root label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.root label strong,
+.root label span {
+  flex: 1 20%;
+}
+
+.root label strong {
+  font-weight: bold;
+}
+
+.root label input {
+  flex: 1 80%;
+  padding: var(--base-margin);
+  margin-left: 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons > button {
+  flex: 1;
+  padding: var(--base-margin);
+}
+
+.buttons > button:not(:first-of-type) {
+  margin-left: 5px;
+}
+
+.submit {
+  @apply --success;
+}

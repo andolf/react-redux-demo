@@ -1,41 +1,71 @@
 @import "../core/variables.css";
 
+:root {
+  --nav-link: {
+    font-weight: bold;
+    color: var(--grey);
+    padding: 15px 20px;
+    height: 100%;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+}
+
 .root {
   display: flex;
   align-items: stretch;
   background: var(--background-menu);
 }
 
-.logo {
+.logo > a {
+  display: inline-block;
+  text-decoration: none;
   color: var(--white);
-  padding: var(--base-margin);
   background: var(--orange);
+  padding: var(--base-margin);
+}
+
+.list {
+  display: flex;
+  flex: 1;
 }
 
 .list > li {
   display: inline-block;
+  margin: calc(var(--base-margin) / 2);
 }
 
-.root a,
-.root a:active {
-  font-weight: bold;
-  color: var(--grey);
-  padding: 15px 20px;
-  margin: 5px;
-  display: inline-block;
-  text-decoration: none;
+.list a,
+.list a:active {
+  @apply --nav-link;
 }
 
-.root a:hover,
-.root a.active:hover {
-  color: var(--text-color);
+.list a:focus,
+.list a:hover,
+.list a.active:hover {
   background: var(--white);
+  color: var(--text-color);
 }
 
-.root a:focus,
-.root a.active:focus,
-.root a.selected,
-.root a.active.selected {
+.list a.active:focus,
+.list a.selected,
+.list a.active.selected {
   background: var(--blue);
   color: var(--white);
+}
+
+.list .active {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.login {
+  @apply --nav-link;
+
+  background: var(--orange);
+  border: 0;
+  color: var(--white);
+  font-size: var(--base-font-size);
+  margin: 4px;
 }

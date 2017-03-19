@@ -8,7 +8,10 @@ class About extends React.Component {
 
     render() {
         return (
-            <h2>About</h2>
+            <section>
+                <h2>About</h2>
+                <p>Just some text here on this page.</p>
+            </section>
         );
     }
 }

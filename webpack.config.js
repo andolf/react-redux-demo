@@ -34,7 +34,7 @@ module.exports = function(env) {
 				test: /\.css$/,
 				use: [
 					'style-loader',
-					'css-loader?modules',
+					'css-loader?modules&importLoaders=1',
 					'postcss-loader'
 				],
 			}]

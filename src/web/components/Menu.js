@@ -1,15 +1,49 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {IndexLink, Link} from 'react-router';
+import Modal from './Modal';
+import Button from './Button';
+import LoginForm from './LoginForm';
 import style from '../style/components/Menu.css';
 
-const Menu = () => (
-    <nav id='menu' className={style.root}>
-        <h1 id='logo' className={style.logo}>GameStore</h1>
-        <ul className={style.list}>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
-        </ul>
-    </nav>
-);
+export default class Menu extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showLogin: false
+        };
+        this.onLoginClick = this.onLoginClick.bind(this);
+        this.onCloseModal = this.onCloseModal.bind(this);
+    }
 
-export default Menu;
+    onLoginClick() {
+        this.setState({
+            showLogin: true
+        });
+    }
+
+    onCloseModal() {
+        this.setState({
+            showLogin: false
+        });
+    }
+
+    render() {
+        return (
+            <nav className={style.root}>
+                <h1 className={style.logo}><IndexLink to='/'>GameStore</IndexLink></h1>
+                <ul className={style.list}>
+                    <li><IndexLink to='/' activeClassName={style.active}>Home</IndexLink></li>
+                    <li><Link to='/about' activeClassName={style.active}>About</Link></li>
+                </ul>
+                <Button onClick={this.onLoginClick} className={style.login}>Login</Button>
+                <Modal isOpen={this.state.showLogin}
+                       contentLabel="Login"
+                       onRequestClose={this.onCloseModal}
+                       shouldCloseOnOverlayClick={true}
+                       parentSelector={() => document.body}>
+                    <LoginForm onCancel={this.onCloseModal}/>
+                </Modal>
+            </nav>
+        );
+    }
+};
