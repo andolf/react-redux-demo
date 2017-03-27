@@ -18,7 +18,3 @@ $ open localhost:3000
 ```
 
 **NOTE:** This project is still a work in progress and used for experimental purposes.
-
-## TODO
-- Actual isomorphic stuff.
-- Testing using Jest.
