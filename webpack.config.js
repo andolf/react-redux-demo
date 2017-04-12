@@ -15,7 +15,7 @@ module.exports = function(env) {
 			path: path.resolve(__dirname, 'dist'),
 			publicPath: '/static/'
 		},
-		devtool: '#eval',
+		devtool: 'eval',
 		module: {
 			rules: [{
 				test: /\.js$/,
