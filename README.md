@@ -1,3 +1,5 @@
+![dependencies](https://david-dm.org/andolf/react-redux-demo.svg) ![devDependencies](https://david-dm.org/andolf/react-redux-demo/dev-status.svg)
+
 # Isomorphic application using React & Redux
 
 An example boilerplate using various libraries to create an isomorphic application.
