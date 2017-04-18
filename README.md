@@ -1,4 +1,4 @@
-![dependencies](https://david-dm.org/andolf/react-redux-demo.svg) ![devDependencies](https://david-dm.org/andolf/react-redux-demo/dev-status.svg)
+[![Build Status](https://travis-ci.org/andolf/react-redux-demo.svg?branch=master)](https://travis-ci.org/andolf/react-redux-demo) ![dependencies](https://david-dm.org/andolf/react-redux-demo.svg) ![devDependencies](https://david-dm.org/andolf/react-redux-demo/dev-status.svg)
 
 # Isomorphic application using React & Redux
 
