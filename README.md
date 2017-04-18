@@ -1,7 +1,5 @@
 # Isomorphic application using React & Redux
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/andolf/react-redux-demo.svg)](https://greenkeeper.io/)
-
 An example boilerplate using various libraries to create an isomorphic application.
 
 ## Libraries used:
