@@ -10,7 +10,8 @@
     "start": "node server & webpack-dev-server",
     "lint": "eslint src",
     "test": "jest",
-    "test:coverage": "yarn test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
