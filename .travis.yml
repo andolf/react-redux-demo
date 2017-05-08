@@ -3,7 +3,7 @@ node_js:
   - "7"
 before_script:
   - yarn lint
-  - yarn test
+  - yarn test:coverage
 script:
   - yarn build:prod
 cache:
