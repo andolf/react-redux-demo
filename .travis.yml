@@ -2,10 +2,10 @@ language: node_js
 node_js:
   - "7"
 before_script:
-  - npm run lint
-  - npm test
+  - yarn lint
+  - yarn test
 script:
-  - npm run build:prod
+  - yarn build:prod
 cache:
   yarn: true
   directories:
