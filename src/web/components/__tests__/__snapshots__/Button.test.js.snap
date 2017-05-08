@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders with default type 1`] = `
+<button
+  className=""
+  onClick={undefined}
+  type="button"
+>
+  Text
+</button>
+`;
