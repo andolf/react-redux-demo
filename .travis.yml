@@ -3,4 +3,9 @@ node_js:
   - "7"
 before_script:
   - npm test
-script: npm run build:prod
+script:
+  - npm run build:prod
+cache:
+  yarn: true
+  directories:
+    - node_modules
