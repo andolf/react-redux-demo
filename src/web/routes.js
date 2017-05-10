@@ -1,6 +1,6 @@
 import React from 'react';
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';
-import Frame from './components/Frame';
+import Frame from './containers/Frame';
 import Home from './components/Home';
 import Products from './components/Products';
 import Product from './components/Product';

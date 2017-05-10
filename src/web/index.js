@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from '../core/redux/configureStore';
-import AppContainer from './components/AppContainer';
+import Root from './containers/Root';
 import './style/core/base.css';
 
 const state = window.$REDUX_STATE;
@@ -10,7 +10,7 @@ const MOUNT_NODE = document.getElementById('root');
 
 const render = () => {
     ReactDOM.render(
-        <AppContainer store={store}/>,
+        <Root store={store}/>,
         MOUNT_NODE
     );
 };

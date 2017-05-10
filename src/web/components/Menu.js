@@ -1,6 +1,6 @@
 import React from 'react';
 import {IndexLink, Link} from 'react-router';
-import Modal from './Modal';
+import Modal from '../containers/Modal';
 import Button from './Button';
 import LoginForm from './LoginForm';
 import style from '../style/components/Menu.css';

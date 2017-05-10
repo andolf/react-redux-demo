@@ -1,8 +1,9 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {Provider} from 'react-redux';
 import Routes from '../routes';
 
-class AppContainer extends React.Component {
+class Root extends React.Component {
     static propTypes = {
         store: PropTypes.object.isRequired
     };
@@ -22,4 +23,4 @@ class AppContainer extends React.Component {
     }
 }
 
-export default AppContainer;
+export default Root;

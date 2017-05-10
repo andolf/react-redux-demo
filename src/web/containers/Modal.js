@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactModal from 'react-modal';
-import Button from './Button';
+import Button from '../components/Button';
 import style from '../style/components/Modal.css';
 
 export class ModalHeader extends React.Component {
