@@ -1,23 +1,16 @@
 import React from 'react';
-import {Router, Route, IndexRoute, browserHistory} from 'react-router';
-import Frame from './components/Frame';
+import {Route} from 'react-router';
 import Home from './components/Home';
 import Products from './components/Products';
-import Product from './components/Product';
 import About from './components/About';
 import NotFound from './components/NotFound';
 
 const Routes = () => (
-    <Router history={browserHistory}>
-        <Route path='/' component={Frame}>
-            <IndexRoute component={Home}/>
-            <Route path='products' component={Products}>
-                <Route path='/product/:id' component={Product}/>
-            </Route>
-            <Route path='about' components={About}/>
-            <Route path='*' components={NotFound}/>
-        </Route>
-    </Router>
+    <Route path='/' component={Home}>
+        <Route path='/products' component={Products}/>
+        <Route path='/about' components={About}/>
+        <Route components={NotFound}/>
+    </Route>
 );
 
 export default Routes;
