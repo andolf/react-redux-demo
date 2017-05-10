@@ -1,7 +1,6 @@
 import React from 'react';
-import {Link, Route} from 'react-router-dom';
+import {Link} from 'react-router';
 import Button from './Button';
-import Product from './Product';
 import style from '../style/components/Products.css';
 
 class Products extends React.Component {
@@ -43,8 +42,6 @@ class Products extends React.Component {
                         </footer>
                     </article>
                 ))}
-
-                <Route path='/product/:id' component={Product}/>
             </section>
         );
     }

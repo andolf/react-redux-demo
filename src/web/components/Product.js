@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router';
 
 class Products extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ class Products extends React.Component {
 
         return (
             <div className='products'>
-                <Link to={'/product/' + product.id} key={'product-' + i} className='product'>
+                <div to={'/product/' + product.id} key={'product-' + i} className='product'>
                     <img src='http://placehold.it/200x200' alt={product.name}/>
                     <header className='product__title'>{product.name}</header>
 
@@ -32,7 +32,7 @@ class Products extends React.Component {
                         <small>{product.releaseDate}</small>
                         <small>{product.platform}</small>
                     </footer>
-                </Link>
+                </div>
             </div>
         );
     }
