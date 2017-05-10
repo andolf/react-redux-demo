@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/andolf/react-redux-demo.svg?branch=master)](https://travis-ci.org/andolf/react-redux-demo) [![dependencies](https://david-dm.org/andolf/react-redux-demo.svg)](https://david-dm.org/andolf/react-redux-demo) [![devDependencies](https://david-dm.org/andolf/react-redux-demo/dev-status.svg)](https://david-dm.org/andolf/react-redux-demo?type=dev)
+[![Build Status](https://travis-ci.org/andolf/react-redux-demo.svg?branch=master)](https://travis-ci.org/andolf/react-redux-demo) [![dependencies](https://david-dm.org/andolf/react-redux-demo.svg)](https://david-dm.org/andolf/react-redux-demo) [![devDependencies](https://david-dm.org/andolf/react-redux-demo/dev-status.svg)](https://david-dm.org/andolf/react-redux-demo?type=dev) [![Coverage Status](https://coveralls.io/repos/github/andolf/react-redux-demo/badge.svg?branch=master)](https://coveralls.io/github/andolf/react-redux-demo?branch=master)
 
 # Isomorphic application using React & Redux
 

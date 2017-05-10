@@ -9,7 +9,9 @@
     "build:prod": "echo TODO",
     "start": "node server & webpack-dev-server",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.22.0",
+    "coveralls": "^2.13.1",
     "css-loader": "^0.28.0",
     "eslint": "^3.16.1",
     "eslint-loader": "^1.6.3",
