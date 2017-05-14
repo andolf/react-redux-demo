@@ -1,7 +1,7 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {getProducts} from '../../core/redux/actions/productsActions';
+import {getProducts, getProduct} from '../../core/redux/actions/productsActions';
 import Products from './Products';
 
 const Home = ({actions, products}) => (
@@ -11,12 +11,14 @@ const Home = ({actions, products}) => (
 );
 
 const mapPropsToState = state => ({
-    products: state.products
+    products: state.products,
+    product: state.product
 });
 
 const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators({
-        getProducts
+        getProducts,
+        getProduct
     }, dispatch)
 });
 

@@ -1,0 +1,27 @@
+@import "./variables.css";
+
+.responsive-container {
+  margin-left: var(--base-margin);
+  margin-right: var(--base-margin);
+  width: auto;
+
+  @media (--small-viewport) {
+    width: auto;
+  }
+
+  @media (--medium-viewport) {
+    width: auto;
+  }
+
+  @media (--large-viewport) {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (--extra-large-viewport) {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

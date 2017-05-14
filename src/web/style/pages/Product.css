@@ -1,0 +1,7 @@
+@import "../core/variables.css";
+
+.root {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

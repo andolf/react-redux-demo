@@ -4,6 +4,7 @@
   --text-color: #1f1f21;
   --header-font-family: 'Assistant', sans-serif;
   --base-font-family: 'Helvetica', sans-serif;
+  --base-container-width: 900px;
 
   --base-margin: 10px;
   --base-font-size: 1em;
@@ -41,3 +42,8 @@
     color: var(--white);
   };
 }
+
+@custom-media --small-viewport (min-width: 480px));
+@custom-media --medium-viewport (min-width: 768px);
+@custom-media --large-viewport (min-width: 1024px);
+@custom-media --extra-large-viewport (min-width: 1200px);

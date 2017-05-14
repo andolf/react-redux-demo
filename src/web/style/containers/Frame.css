@@ -1,0 +1,6 @@
+@import "../core/variables.css";
+
+.container {
+  composes: responsive-container from "../core/mixins.css";
+  margin-top: var(--base-margin);
+}

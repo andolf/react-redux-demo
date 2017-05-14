@@ -1,11 +1,5 @@
 @import "../core/variables.css";
 
-.root {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
 .item {
   border: 1px solid var(--border-color);
   padding: var(--base-margin);
@@ -40,7 +34,13 @@
   font-weight: bold;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   background-color: var(--blue-dark);
   color: var(--white);
+  margin-top: 5px;
 }

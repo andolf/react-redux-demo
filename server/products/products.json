@@ -5,7 +5,8 @@
 		"name": "Final Fantasy VI",
 		"platform": "SNES",
 		"cost": 300,
-		"releaseDate": 1994
+		"releaseDate": 1994,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo, urna vel cursus imperdiet, purus nulla aliquam tortor, eget faucibus sem diam a diam. Duis facilisis tempor felis, id viverra lectus fringilla at. Nullam eu ligula orci. Nulla quis viverra tellus, quis mattis felis. Pellentesque semper scelerisque velit et venenatis. Pellentesque quis egestas tortor. Suspendisse eget aliquam metus, ac rhoncus velit. Vivamus commodo arcu ac libero elementum, vel scelerisque urna lobortis.\nPhasellus gravida ut mi sit amet maximus. Aliquam malesuada urna in ipsum ornare ornare non gravida massa. In ac ipsum erat. Nulla tristique viverra blandit. Nunc suscipit porttitor neque. Sed vitae orci nec nibh mollis fringilla. Curabitur vel lobortis eros, eget rhoncus nibh. Sed egestas diam a sem congue, sit amet placerat justo dignissim. Sed finibus nisl non enim tincidunt, a porta ligula luctus. Mauris sollicitudin dui in posuere condimentum. Sed vehicula nisi a urna convallis, sed rutrum est sagittis.\nVivamus elit urna, tincidunt at mi non, pretium placerat urna. In dignissim lectus quis tincidunt hendrerit. Aliquam sem urna, cursus sed porttitor a, tempor ut dui. Nam aliquet, odio non ullamcorper maximus, tortor tortor rhoncus dolor, ut ultrices magna augue sed lacus. Donec lectus augue, tincidunt id dolor scelerisque, porta dapibus est. Ut finibus felis eros, in commodo lorem lacinia a. Nam dapibus laoreet porttitor. Cras nisi sem, luctus vitae magna eu, lacinia molestie sem. Nulla facilisi. Phasellus porttitor aliquet urna, vel ultrices neque iaculis non. Vestibulum massa ligula, malesuada sit amet egestas vehicula, rutrum id magna. Phasellus lobortis tempus justo at euismod."
 	},
 	{
 		"id": 1,
@@ -13,7 +14,8 @@
 		"name": "Mega Man 2",
 		"platform": "NES",
 		"cost": 200,
-		"releaseDate": 1988
+		"releaseDate": 1988,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo, urna vel cursus imperdiet, purus nulla aliquam tortor, eget faucibus sem diam a diam. Duis facilisis tempor felis, id viverra lectus fringilla at. Nullam eu ligula orci. Nulla quis viverra tellus, quis mattis felis. Pellentesque semper scelerisque velit et venenatis. Pellentesque quis egestas tortor. Suspendisse eget aliquam metus, ac rhoncus velit. Vivamus commodo arcu ac libero elementum, vel scelerisque urna lobortis.\nPhasellus gravida ut mi sit amet maximus. Aliquam malesuada urna in ipsum ornare ornare non gravida massa. In ac ipsum erat. Nulla tristique viverra blandit. Nunc suscipit porttitor neque. Sed vitae orci nec nibh mollis fringilla. Curabitur vel lobortis eros, eget rhoncus nibh. Sed egestas diam a sem congue, sit amet placerat justo dignissim. Sed finibus nisl non enim tincidunt, a porta ligula luctus. Mauris sollicitudin dui in posuere condimentum. Sed vehicula nisi a urna convallis, sed rutrum est sagittis.\nVivamus elit urna, tincidunt at mi non, pretium placerat urna. In dignissim lectus quis tincidunt hendrerit. Aliquam sem urna, cursus sed porttitor a, tempor ut dui. Nam aliquet, odio non ullamcorper maximus, tortor tortor rhoncus dolor, ut ultrices magna augue sed lacus. Donec lectus augue, tincidunt id dolor scelerisque, porta dapibus est. Ut finibus felis eros, in commodo lorem lacinia a. Nam dapibus laoreet porttitor. Cras nisi sem, luctus vitae magna eu, lacinia molestie sem. Nulla facilisi. Phasellus porttitor aliquet urna, vel ultrices neque iaculis non. Vestibulum massa ligula, malesuada sit amet egestas vehicula, rutrum id magna. Phasellus lobortis tempus justo at euismod."
 	},
 	{
 		"id": 2,
@@ -21,7 +23,8 @@
 		"name": "Super Mario Bros.",
 		"platform": "NES",
 		"cost": 100,
-		"releaseDate": 1985
+		"releaseDate": 1985,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo, urna vel cursus imperdiet, purus nulla aliquam tortor, eget faucibus sem diam a diam. Duis facilisis tempor felis, id viverra lectus fringilla at. Nullam eu ligula orci. Nulla quis viverra tellus, quis mattis felis. Pellentesque semper scelerisque velit et venenatis. Pellentesque quis egestas tortor. Suspendisse eget aliquam metus, ac rhoncus velit. Vivamus commodo arcu ac libero elementum, vel scelerisque urna lobortis.\nPhasellus gravida ut mi sit amet maximus. Aliquam malesuada urna in ipsum ornare ornare non gravida massa. In ac ipsum erat. Nulla tristique viverra blandit. Nunc suscipit porttitor neque. Sed vitae orci nec nibh mollis fringilla. Curabitur vel lobortis eros, eget rhoncus nibh. Sed egestas diam a sem congue, sit amet placerat justo dignissim. Sed finibus nisl non enim tincidunt, a porta ligula luctus. Mauris sollicitudin dui in posuere condimentum. Sed vehicula nisi a urna convallis, sed rutrum est sagittis.\nVivamus elit urna, tincidunt at mi non, pretium placerat urna. In dignissim lectus quis tincidunt hendrerit. Aliquam sem urna, cursus sed porttitor a, tempor ut dui. Nam aliquet, odio non ullamcorper maximus, tortor tortor rhoncus dolor, ut ultrices magna augue sed lacus. Donec lectus augue, tincidunt id dolor scelerisque, porta dapibus est. Ut finibus felis eros, in commodo lorem lacinia a. Nam dapibus laoreet porttitor. Cras nisi sem, luctus vitae magna eu, lacinia molestie sem. Nulla facilisi. Phasellus porttitor aliquet urna, vel ultrices neque iaculis non. Vestibulum massa ligula, malesuada sit amet egestas vehicula, rutrum id magna. Phasellus lobortis tempus justo at euismod."
 	},
 	{
 		"id": 3,
@@ -29,7 +32,8 @@
 		"name": "Paper Boy",
 		"platform": "NES",
 		"cost": 50,
-		"releaseDate": 1985
+		"releaseDate": 1985,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo, urna vel cursus imperdiet, purus nulla aliquam tortor, eget faucibus sem diam a diam. Duis facilisis tempor felis, id viverra lectus fringilla at. Nullam eu ligula orci. Nulla quis viverra tellus, quis mattis felis. Pellentesque semper scelerisque velit et venenatis. Pellentesque quis egestas tortor. Suspendisse eget aliquam metus, ac rhoncus velit. Vivamus commodo arcu ac libero elementum, vel scelerisque urna lobortis.\nPhasellus gravida ut mi sit amet maximus. Aliquam malesuada urna in ipsum ornare ornare non gravida massa. In ac ipsum erat. Nulla tristique viverra blandit. Nunc suscipit porttitor neque. Sed vitae orci nec nibh mollis fringilla. Curabitur vel lobortis eros, eget rhoncus nibh. Sed egestas diam a sem congue, sit amet placerat justo dignissim. Sed finibus nisl non enim tincidunt, a porta ligula luctus. Mauris sollicitudin dui in posuere condimentum. Sed vehicula nisi a urna convallis, sed rutrum est sagittis.\nVivamus elit urna, tincidunt at mi non, pretium placerat urna. In dignissim lectus quis tincidunt hendrerit. Aliquam sem urna, cursus sed porttitor a, tempor ut dui. Nam aliquet, odio non ullamcorper maximus, tortor tortor rhoncus dolor, ut ultrices magna augue sed lacus. Donec lectus augue, tincidunt id dolor scelerisque, porta dapibus est. Ut finibus felis eros, in commodo lorem lacinia a. Nam dapibus laoreet porttitor. Cras nisi sem, luctus vitae magna eu, lacinia molestie sem. Nulla facilisi. Phasellus porttitor aliquet urna, vel ultrices neque iaculis non. Vestibulum massa ligula, malesuada sit amet egestas vehicula, rutrum id magna. Phasellus lobortis tempus justo at euismod."
 	},
 	{
 		"id": 4,
@@ -37,6 +41,7 @@
 		"name": "Ice Hockey",
 		"platform": "NES",
 		"cost": 50,
-		"releaseDate": 1988
+		"releaseDate": 1988,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo, urna vel cursus imperdiet, purus nulla aliquam tortor, eget faucibus sem diam a diam. Duis facilisis tempor felis, id viverra lectus fringilla at. Nullam eu ligula orci. Nulla quis viverra tellus, quis mattis felis. Pellentesque semper scelerisque velit et venenatis. Pellentesque quis egestas tortor. Suspendisse eget aliquam metus, ac rhoncus velit. Vivamus commodo arcu ac libero elementum, vel scelerisque urna lobortis.\nPhasellus gravida ut mi sit amet maximus. Aliquam malesuada urna in ipsum ornare ornare non gravida massa. In ac ipsum erat. Nulla tristique viverra blandit. Nunc suscipit porttitor neque. Sed vitae orci nec nibh mollis fringilla. Curabitur vel lobortis eros, eget rhoncus nibh. Sed egestas diam a sem congue, sit amet placerat justo dignissim. Sed finibus nisl non enim tincidunt, a porta ligula luctus. Mauris sollicitudin dui in posuere condimentum. Sed vehicula nisi a urna convallis, sed rutrum est sagittis.\nVivamus elit urna, tincidunt at mi non, pretium placerat urna. In dignissim lectus quis tincidunt hendrerit. Aliquam sem urna, cursus sed porttitor a, tempor ut dui. Nam aliquet, odio non ullamcorper maximus, tortor tortor rhoncus dolor, ut ultrices magna augue sed lacus. Donec lectus augue, tincidunt id dolor scelerisque, porta dapibus est. Ut finibus felis eros, in commodo lorem lacinia a. Nam dapibus laoreet porttitor. Cras nisi sem, luctus vitae magna eu, lacinia molestie sem. Nulla facilisi. Phasellus porttitor aliquet urna, vel ultrices neque iaculis non. Vestibulum massa ligula, malesuada sit amet egestas vehicula, rutrum id magna. Phasellus lobortis tempus justo at euismod."
 	}
 ]

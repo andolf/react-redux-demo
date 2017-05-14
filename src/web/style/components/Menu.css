@@ -13,9 +13,19 @@
 }
 
 .root {
+  background: var(--background-menu);
+}
+
+.container {
+  composes: responsive-container from "../core/mixins.css";
   display: flex;
   align-items: stretch;
-  background: var(--background-menu);
+  margin: 0;
+
+  @media (--large-viewport) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .logo > a {
@@ -68,4 +78,6 @@
   color: var(--white);
   font-size: var(--base-font-size);
   margin: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

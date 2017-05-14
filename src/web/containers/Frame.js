@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from '../components/Menu';
-import style from '../style/components/Frame.css';
+import style from '../style/containers/Frame.css';
 
 const Frame = ({children}) => (
     <div>

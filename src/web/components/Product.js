@@ -1,41 +1,28 @@
 import React from 'react';
 import {Link} from 'react-router';
+import Button from '../components/Button';
+import style from '../style/components/Product.css';
 
-class Products extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+const Product = ({product}) => (
+    <article className={style.item}>
+        <img className={style.image} src='http://placehold.it/200x200' alt={product.name}/>
+        <header className={style.title}>{product.name}</header>
 
-    shouldComponentUpdate() {
-        return false;
-    }
+        <section>
+            <p className={style.ribbon}>{product.category}</p>
+            <p>{product.releaseDate}</p>
+            <p>{product.platform}</p>
+        </section>
 
-    componentWillMount() {
-        this.props.actions.getProduct();
-    }
+        <footer className={style.footer}>
+            <Link to={'/product/' + product.id}>
+                Read more
+            </Link>
+            <Button className={style.button}>
+                Add to cart
+            </Button>
+        </footer>
+    </article>
+);
 
-    render() {
-        const {product} = this.props;
-        if (!product) return <div>No products.</div>;
-
-        return (
-            <div className='products'>
-                <div to={'/product/' + product.id} key={'product-' + i} className='product'>
-                    <img src='http://placehold.it/200x200' alt={product.name}/>
-                    <header className='product__title'>{product.name}</header>
-
-                    <p>{product.description}</p>
-
-                    <footer>
-                        <p className='product__ribbon'>{product.category}</p>
-                        <small>{product.releaseDate}</small>
-                        <small>{product.platform}</small>
-                    </footer>
-                </div>
-            </div>
-        );
-    }
-}
-
-export default Products;
+export default Product;

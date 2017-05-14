@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 import Button from '../components/Button';
-import style from '../style/components/Modal.css';
+import style from '../style/containers/Modal.css';
 
 export class ModalHeader extends React.Component {
     constructor(props) {
@@ -29,7 +29,21 @@ export default class Modal extends React.Component {
 
     render() {
         return (
-            <ReactModal {...this.props}>
+            <ReactModal {...this.props} style={{
+                content: {
+                    borderRadius: '4px',
+                    bottom: 'auto',
+                    minHeight: '10rem',
+                    left: '50%',
+                    position: 'fixed',
+                    right: 'auto',
+                    top: '50%',
+                    transform: 'translate(-50%,-50%)',
+                    minWidth: '20rem',
+                    width: '30rem',
+                    maxWidth: '60rem'
+                }
+            }}>
                 <ModalHeader {...this.props}>
                     {this.props.children}
                 </ModalHeader>

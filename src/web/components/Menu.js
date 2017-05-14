@@ -30,12 +30,15 @@ export default class Menu extends React.Component {
     render() {
         return (
             <nav className={style.root}>
-                <h1 className={style.logo}><IndexLink to='/'>GameStore</IndexLink></h1>
-                <ul className={style.list}>
-                    <li><IndexLink to='/' activeClassName={style.active}>Home</IndexLink></li>
-                    <li><Link to='/about' activeClassName={style.active}>About</Link></li>
-                </ul>
-                <Button onClick={this.onLoginClick} className={style.login}>Login</Button>
+                <div className={style.container}>
+                    <h1 className={style.logo}><IndexLink to='/'>GameStore</IndexLink></h1>
+                    <ul className={style.list}>
+                        <li><IndexLink to='/' activeClassName={style.active}>Home</IndexLink></li>
+                        <li><Link to='/about' activeClassName={style.active}>About</Link></li>
+                    </ul>
+                    <Button onClick={this.onLoginClick} className={style.login}>Login</Button>
+                </div>
+
                 <Modal isOpen={this.state.showLogin}
                        contentLabel="Login"
                        onRequestClose={this.onCloseModal}
