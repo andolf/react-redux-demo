@@ -61,7 +61,7 @@
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.2.0",
     "style-loader": "^0.17.0",
-    "stylelint": "^7.9.0",
+    "stylelint": "^8.0.0",
     "stylelint-config-standard": "^16.0.0",
     "testcafe": "^0.15.0",
     "testcafe-react-selectors": "^0.0.3",
