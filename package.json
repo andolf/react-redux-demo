@@ -66,7 +66,7 @@
     "testcafe": "^0.15.0",
     "testcafe-react-selectors": "^0.0.3",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
+    "webpack-dev-server": "^2.9.1"
   },
   "dependencies": {
     "classnames": "^2.2.5",
