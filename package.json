@@ -55,7 +55,7 @@
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
     "precss": "^2.0.0",
-    "react-hot-loader": "^3.0.0",
+    "react-hot-loader": "^4.0.0",
     "react-test-renderer": "^16.0.0",
     "redux-devtools": "^3.3.2",
     "redux-devtools-dock-monitor": "^1.1.1",
