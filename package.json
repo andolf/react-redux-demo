@@ -53,7 +53,7 @@
     "nodemon": "^1.12.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",
-    "postcss-loader": "^2.0.8",
+    "postcss-loader": "^3.0.0",
     "precss": "^2.0.0",
     "react-hot-loader": "^3.0.0",
     "react-test-renderer": "^16.0.0",
