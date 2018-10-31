@@ -7,5 +7,6 @@ before_script:
 script:
   - npm run build:prod
 cache:
+  npm: true
   directories:
     - node_modules
