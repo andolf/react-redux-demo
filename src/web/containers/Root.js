@@ -5,10 +5,6 @@ import Routes from '../routes';
 import DevTools from '../../core/components/DevTools';
 
 class Root extends React.Component {
-    static propTypes = {
-        store: PropTypes.object.isRequired
-    };
-
     shouldComponentUpdate() {
         return false;
     }
@@ -26,5 +22,9 @@ class Root extends React.Component {
         );
     }
 }
+
+Root.propTypes = {
+    store: PropTypes.object.isRequired
+};
 
 export default Root;
