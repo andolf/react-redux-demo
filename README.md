@@ -13,11 +13,9 @@ An example boilerplate using various libraries to create an isomorphic applicati
 
 ## How to run
 
-This project uses yarn but you can substitute that for `npm` if you wish.
-
 ```bash
-$ yarn
-$ yarn start
+$ npm i
+$ npm start
 $ open localhost:3000
 ```
 
