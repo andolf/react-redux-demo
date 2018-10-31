@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../Button';
 import renderer from 'react-test-renderer';
+import Button from '../Button';
 
 test('Button renders with default type', () => {
     const component = renderer.create(
