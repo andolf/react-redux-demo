@@ -62,7 +62,7 @@
     "style-loader": "^0.23.1",
     "stylelint": "^9.7.1",
     "stylelint-config-standard": "^18.2.0",
-    "testcafe": "^0.23.0",
+    "testcafe": "^1.7.0",
     "testcafe-react-selectors": "^3.0.0",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
