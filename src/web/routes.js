@@ -1,22 +1,34 @@
 import React from 'react';
-import {Router, Route, IndexRoute, browserHistory} from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Frame from './containers/Frame';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import Product from './pages/Product';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
+import Home from './views/Home';
+import Products from './views/Products';
+import Product from './views/Product';
+import About from './views/About';
+import NotFound from './views/NotFound';
 
 const Routes = () => (
-    <Router history={browserHistory}>
-        <Route path='/' component={Frame}>
-            <IndexRoute component={Home}/>
-            <Route path='products' component={Products} />
-            <Route path='product/:id' component={Product}/>
-            <Route path='about' components={About}/>
-            <Route path='*' components={NotFound}/>
+  <Router>
+    <Switch>
+      <Frame>
+        <Route path="/product/:id">
+          <Product />
         </Route>
-    </Router>
+        <Route path="/products">
+          <Products />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Frame>
+    </Switch>
+  </Router>
 );
 
 export default Routes;

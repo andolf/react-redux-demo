@@ -1,29 +1,23 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Form from './Form';
 
-export default class LoginForm extends React.Component {
-    constructor(props) {
-        super(props);
-        this.onSubmit = this.onSubmit.bind(this);
-    }
+function LoginForm({ onCancel }) {
+  const onSubmit = useCallback(e => {
+    e.preventDefault();
+  });
 
-    onSubmit(e) {
-        e.preventDefault();
-    }
-
-    render() {
-        const {onCancel} = this.props;
-        return (
-            <Form onSubmit={this.onSubmit} onCancel={onCancel}>
-                <label>
-                    <strong>E-mail:</strong>
-                    <input type="text"/>
-                </label>
-                <label>
-                    <strong>Password:</strong>
-                    <input type="password"/>
-                </label>
-            </Form>
-        );
-    }
+  return (
+    <Form onSubmit={onSubmit} onCancel={onCancel}>
+      <label>
+        <strong>E-mail:</strong>
+        <input type="text" />
+      </label>
+      <label>
+        <strong>Password:</strong>
+        <input type="password" />
+      </label>
+    </Form>
+  );
 }
+
+export default LoginForm;
